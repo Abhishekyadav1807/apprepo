@@ -6,5 +6,8 @@ module.exports = {
   extends: ['standard'],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules: {
+    semi: ['error', 'always']
   }
 };
