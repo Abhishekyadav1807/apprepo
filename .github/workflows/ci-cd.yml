@@ -19,13 +19,13 @@ jobs:
       - name: Backend lint
         working-directory: backend
         run: |
-          npm ci
+          npm install
           npm run lint
 
       - name: Frontend lint and build
         working-directory: frontend
         run: |
-          npm ci
+          npm install
           npm run lint
           npm run build
 
