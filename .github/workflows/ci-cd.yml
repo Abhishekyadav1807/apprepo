@@ -19,13 +19,13 @@ jobs:
       - name: Backend lint
         working-directory: backend
         run: |
-          npm install --legacy-peer-deps
+          npm install --legacy-peer-deps --force
           npm run lint
 
       - name: Frontend lint and build
         working-directory: frontend
         run: |
-          npm install --legacy-peer-deps
+          npm install --legacy-peer-deps --force
           npm run lint
           npm run build
 
